@@ -1,0 +1,15 @@
+{
+  "name": "tcp_sharer",
+  "version": "1.0.0",
+  "main": "file-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "multiplex": "^6.7.0"
+  }
+}
