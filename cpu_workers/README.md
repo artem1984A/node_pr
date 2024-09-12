@@ -1,4 +1,4 @@
-# 08-cpu-bound
+# 
 
 This to run a CPU-bound task in Node.js
 using setImmediate or multiple processes.
