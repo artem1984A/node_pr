@@ -15,17 +15,17 @@ In the next version of this project i will show testing and error handeling for 
 So now, to start project:
 ------
 
-npm install
+```shell script npm install
 
-node indexm2
+```shell script node indexm2
 ------
 And for routes:
 
-http://127.0.0.1:3000/basis-react-app/
+```shell script http://127.0.0.1:3000/basis-react-app/
  /-/
-http://127.0.0.1:3001/index.html
-http://127.0.0.1:3001/profile.html
-http://127.0.0.1:3001/angular17/
+```shell script http://127.0.0.1:3001/index.html
+```shell script http://127.0.0.1:3001/profile.html
+```shell script http://127.0.0.1:3001/angular17/
 /-/
 and the rest...
 ---------
