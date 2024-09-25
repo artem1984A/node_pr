@@ -20,11 +20,13 @@ npm install
 node indexm2
 ------
 And for routes:
-http://127.0.0.1:3000/basis-react-app/
 
+http://127.0.0.1:3000/basis-react-app/
+ /-/
 http://127.0.0.1:3001/index.html
 http://127.0.0.1:3001/profile.html
 http://127.0.0.1:3001/angular17/
+/-/
 and the rest...
 ---------
 
