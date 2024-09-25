@@ -21,11 +21,11 @@ So now, to start project:
 ------
 And for routes:
 
-```shell script http://127.0.0.1:3000/basis-react-app/ ```
- /-/
-```shell script http://127.0.0.1:3001/index.html ```
-```shell script http://127.0.0.1:3001/profile.html ```
-```shell script http://127.0.0.1:3001/angular17/ ```
+``` http://127.0.0.1:3000/basis-react-app/ ```
+ 
+``` http://127.0.0.1:3001/index.html ```
+``` http://127.0.0.1:3001/profile.html ```
+``` http://127.0.0.1:3001/angular17/ ```
 /-/
 and the rest...
 ---------
