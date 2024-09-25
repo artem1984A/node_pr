@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Artem Ryzhov - Portfolio</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .back-to-main {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        .back-to-main a {
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        .under {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #007bff;
+        }
+
+        /* Style for nested dropdowns */
+        .nested-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nested-dropdown-content {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            min-width: 200px;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .nested-dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        .nested-dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .nested-dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .nested-dropdown:hover .nested-dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Artem Ryzhov</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dutch.html">Dutch version</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/profile.html">English version</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./download">Download page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="back-to-main">
+        <a href="index.html" class="btn btn-primary">Back to Main Page</a>
+    </div>
+
+    <div class="container mt-5">
+        <section id="projects">
+            <div class="dropdown">
+                <span class="dropbtn"><h2 class="under">My projects</h2></span>
+                <div class="dropdown-content">
+                    <div class="nested-dropdown">
+                        <a class="nested-dropbtn">React.js</a>
+                        <div class="nested-dropdown-content">
+                            <a href="https://github.com/artem1984A/React-Basic-Project">Go to GitHub</a>
+                            <a href="https://www.ryzhov.website/basis-react-app/">Watch at site</a>
+                        </div>
+                    </div>
+                      <div class="nested-dropdown">
+                        <a class="nested-dropbtn">React Advanced Project</a>
+                        <div class="nested-dropdown-content">
+                            <a href="https://github.com/artem1984A/React_Final_Project">Go to GitHub</a>
+                            <a href="https://www.ryzhov.website/home/">Watch at site</a>
+                        </div>
+                        </div>
+                        <a href="https://github.com/artem1984A/node_pr/tree/main">Node.js(projects stack)</a>
+                    <a href="https://www.npmjs.com/package/dnsaddon?activeTab=readme">Node.js(c++ addon with V8)</a>
+                    <a href="https://www.ryzhov.website/angular17">Angular file upload component for this site</a>
+                    <a href="https://replit.com/@topmarnet/CssAdv?v=1#index.html">Others</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="under">About Me</h2>
+            <p>
+                Dedicated and detail-oriented aspiring web developer with a passion for creating engaging and responsive web applications. Possessing a solid foundation in HTML, CSS, and JavaScript, OOP,Node.js, TypeScript, I am eager to contribute my skills to a dynamic development team. With a strong commitment to learning and staying current with industry trends, I am well-equipped to tackle challenges and collaborate on innovative projects. Seeking a  position where I can apply my technical knowledge, creativity, and enthusiasm for web development to contribute to the success of forward-thinking organizations.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2 class="under">Experience</h2>
+            <div class="experience-item">
+                <h3>Store assistant at PLUS Retail</h3>
+                <p>Oct 2022 - Present</p>
+                <p>Arnhem-Nijmegen Region</p>
+            </div>
+            <div class="experience-item">
+                <h3>PlazaProvider, Kyiv, Ukraine (full stack job, remotely)
+</h3>
+                <p>Mar 2020 - Sep 2022</p>
+                <p>Kyiv, Ukraine</p>
+                <p>
+                    As a  Node.js Developer : 
+                </p>
+                <p>Architected and implemented a highly scalable services for AlfaGuard company, using Node.js with TypeScript servicing over 100,000 requests daily with 99.99 uptime.
+</p>
+                <p>Configured and setting scalable Node.js application using using Nginx as a reverse proxy server (Ubuntu) to route incoming traffic to multiple Node.js instances.
+</p>
+                <p>Integrated server side caching mechanism for slash server resource consumption over 20%</p>
+                <p>Integrated third-party APIs and services to extend application capabilities.</p>
+                <p>Collaborated in an Agile environment, participating in sprint planning, stand-ups, and code reviews.</p>
+                <p>Applied best practices for code quality, version control (Git), and continuous integration (CI/CD).</p>
+                <p>Developed reusable modules and components, adhering to DRY and modular programming principles.</p>
+                <p>Performed rigorous testing and debugging to ensure high-quality, bug-free software delivery.</p>
+            </div>
+        </section>
+
+       <section id="education">
+            <h2 class="under">Education</h2>
+            <div class="education-item">
+                <h3>Winc Academy</h3>
+                <h3>Local education (courses), Netherlands</h3>
+                <p>Nov 2023 - Aug 2024</p>
+                <p>Front End Developer</p>
+                <p>Courses in Computer Programming</p>
+                <a class="btn btn-primary" href="https://certificates.wincacademy.com/5e55df14-35a8-431e-80a5-b693f681d316#gs.d8qctl">Show credentials</a>
+            </div>
+            <div class="education-item">
+                <h3>Donetsk National University of Economics and Trade</h3>
+                <p>Sep 2009 - Jab 2012</p>
+                <p>Bachelor of Technology in mechanical engineering
+</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="under">Skills</h2>
+            <p>HTML, CSS, ES5, ES6, OOp, TypeScript, React.js, Node.js, Express.js, Application Programming Interfaces (API), Agile Application Development</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="under">Contact</h2>
+            <button id="toggle-contact" class="btn btn-primary mb-3">Toggle Contact Details</button>
+            <div id="contact-details" style="display: none;">
+                <p>
+                    Email: topmarnet@gmail.com<br>
+                    Phone: +31684805098<br>
+                    Linkedin page: <a href="./linkedin">Go to Linkedin</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="back-to-main">
+        <a href="index.html" class="btn btn-primary">Back to Main Page</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Artem Ryzhov. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // JavaScript for toggling the contact details
+            const toggleContactBtn = document.getElementById('toggle-contact');
+            const contactDetails = document.getElementById('contact-details');
+
+            if (toggleContactBtn && contactDetails) {
+                // Toggle visibility of contact details when the button is clicked
+                toggleContactBtn.addEventListener('click', function() {
+                    if (contactDetails.style.display === 'none') {
+                        contactDetails.style.display = 'block';
+                    } else {
+                        contactDetails.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
