@@ -1,38 +1,48 @@
-This small project show case of using Cluster in Node.js, which (so Node.js),
-as well  in charge in highly intensive application.
-So the simplest pattern to distribute the load of an application across
-different instances running on a single machine is by using the cluster module,
-which is part of the core libraries. The cluster module simplifies the forking of new
-instances of the same application and automatically distributes incoming connections
-across them.
-This let us even not using proxy servers (like Nginx and so on) 
-distribute the loading process in purely Node.js .
-In this showcase i am just used Cluster for spred loading React application
-(/base-react-app) and the rest of static
-files (and angular app including),
-because in case if React application can be in high charg it not affect the rest of the functionality.
-In the next version of this project i will show testing and error handeling for different situation of this pattern.
-So now, to start project:
-------
+# Node.js Cluster Module Showcase
 
-```shell script npm install ```
+This small project demonstrates the use of **Cluster** in Node.js, which is particularly useful in handling highly intensive applications. The simplest pattern to distribute the load of an application across different instances running on a single machine is by using the **Cluster** module, which is part of Node.js core libraries.
 
-```shell script node indexm2 ```
-------
-And for routes:
+The **Cluster** module simplifies the forking of new instances of the same application and automatically distributes incoming connections across them. This allows load balancing without the need for external proxy servers (like Nginx) by distributing the load purely with Node.js.
 
-``` http://127.0.0.1:3000/basis-react-app/ ```
- 
-``` http://127.0.0.1:3001/index.html ```
-``` http://127.0.0.1:3001/profile.html ```
-``` http://127.0.0.1:3001/angular17/ ```
-/-/
-and the rest...
----------
+## Project Overview
 
+In this showcase, the **Cluster** module is used to balance the load between a React application (`/basis-react-app`) and other static files (including an Angular app). 
 
-and the rest (but /uploads route will be fetched from my real site,
-not localhost and just in case if you use angular app from projects in profile.html)
+By utilizing **Cluster**, if the React application experiences high load, it won't affect the rest of the functionality on the server.
 
-Its like cutted version of my site (i am not used here React app with Mongo.DB
-because of privacy link to MongoDB Atlas Cluster).
+### Features
+- **Cluster module** is used to spread the loading between the React application and other static files.
+- **No need for external load balancers** like Nginx.
+- **Separate workers** handle different parts of the application, ensuring smooth operation even under high load.
+  
+In future versions, I plan to add **testing** and **error handling** for different situations involving this pattern.
+
+## How to Start the Project
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the project:
+
+   ```bash
+   node indexm2
+   ```
+
+## Available Routes
+
+- React application:  
+  [http://127.0.0.1:3000/basis-react-app/](http://127.0.0.1:3000/basis-react-app/)
+
+- Other static files (served on a separate worker):
+  - [http://127.0.0.1:3001/index.html](http://127.0.0.1:3001/index.html)
+  - [http://127.0.0.1:3001/profile.html](http://127.0.0.1:3001/profile.html)
+  - [http://127.0.0.1:3001/angular17/](http://127.0.0.1:3001/angular17/)
+
+- Other routes (including `/uploads`):  
+  *Please note: `/uploads` is fetched from my real site, not localhost, and is only relevant if you're using the Angular app from `profile.html`.*
+
+### Note:
+This is a simplified version of my full site. I did not include the connection to **MongoDB Atlas Cluster** for privacy reasons.
